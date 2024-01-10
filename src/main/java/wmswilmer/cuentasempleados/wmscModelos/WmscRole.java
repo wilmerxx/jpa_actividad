@@ -1,5 +1,6 @@
 package wmswilmer.cuentasempleados.wmscModelos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,5 +19,6 @@ public class WmscRole {
     private int wmsc_role_id;
     private String wmsc_role_name;
     @ManyToMany(mappedBy = "wmscRole")
+    @JsonIgnore
     private List<WmscAccount> wmscAccount;
 }
