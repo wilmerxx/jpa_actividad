@@ -3,4 +3,5 @@
 
 - Uno a Muchos
 - Muchos a Muchos
+
 Adicional, realizar dos consultas JPQL ya sea por método o realizando el query.
